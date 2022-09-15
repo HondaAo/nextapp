@@ -1,4 +1,4 @@
-export default fetcher = async (
+const fetcher = async (
     resource: RequestInfo,
     init?: RequestInit,
 ): Promise<any> => {
@@ -14,3 +14,5 @@ export default fetcher = async (
 
     return res.json()
 }
+
+export default fetcher
